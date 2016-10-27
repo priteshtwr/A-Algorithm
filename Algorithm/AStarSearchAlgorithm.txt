@@ -1,0 +1,29 @@
+Below steps describes the methodology used to solve the problem statement given using A* Search Algorithm.
+
+1.Begin at the starting node A and add it to an open list of nodes to be considered.
+    
+2.Look at all the  adjacent nodes  to the starting nodes, ignoring nodes with water. 
+Add them to the open list, too. 
+For each of these nodes, save point A as its parent node.
+ 
+3.Drop the starting node A from open list, and add it to a closed list of nodes that we do not need to look at again for now.
+
+To continue the search, we simply choose the lowest cost node from all those that are on the open list. 
+We then do the following with the selected node:
+
+4) Drop it from the open list and add it to the closed list.
+
+5) Check all of the adjacent squares. 
+Ignoring those that are on the closed list or unwalkable (terrain with water), add nodes to the open list 
+if they are not on the open list already. Make the selected node the parent of the new nodes.
+
+6) If an adjacent node is already on the open list, check to see if this path to that node is a better one. 
+In other words, check to see if the cost for that node is lower if we use the current node to get there. 
+If not, do not do anything. 
+On the other hand, if the cost of the new path is lower, change the parent of the adjacent node  
+to the selected node . 
+Finally, recalculate both costs of that node.
+
+7)Keep repeating this steps until Target Node is added to closed list.
+
+8)To trace the path start from the Target Node and keep going back using the parent node ,till we reach the starting node.
