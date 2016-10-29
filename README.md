@@ -12,6 +12,6 @@ Below are the folder the names and description of what it contains :-
 5.Solution :Contains large_map.txt with the path followed to reach the destination.
 6.Source Code: As the name suggests contains the source code for the solution.
 
-Cheers !!!
+Cheers!!!
 
 
